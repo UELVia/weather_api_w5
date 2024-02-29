@@ -6,6 +6,9 @@
   "engines": {
     "node": ">= 18.12 <21"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "license": "MIT",
   "author": "Vianney Tiemele",
   "dependencies": {
