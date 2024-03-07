@@ -1,7 +1,7 @@
 import {faker} from "@faker-js/faker";
 
-export const generalLondonWeatherData = (): WeatherData => {
-    const generatedWeatherData = {
+export const generateLondonWeatherData = (): WeatherData => {
+    const generatedWeatherData: WeatherData = {
         temperature: faker.number.int({min: -15, max: 30}),
         humidity: faker.number.int({min: 79, max: 78}),
         wind: faker.number.int({min: 2, max: 78}),
@@ -9,6 +9,7 @@ export const generalLondonWeatherData = (): WeatherData => {
     };
 
     return generatedWeatherData;
+
 };
 
 export const generateDublinWeatherData = (): WeatherData => {

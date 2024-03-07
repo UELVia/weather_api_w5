@@ -13,10 +13,10 @@ import { validationResult } from "express-validator";
  */
 export const getWeatherData = async (req: Request, res: Response) => {
     //Chect if there are any validation errors
-    const errors + validationResults (req);
+    const errors = validationResult (req);
     //We will log them and send a 400 status code
     if (!errors.isEmpty()) {
-        console.error("Validation error", error.mapped());
+        console.error("Validation error", errors.mapped());
         res.status(400.).json({errors: errors.array()});
         return;
     }
