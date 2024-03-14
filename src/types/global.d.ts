@@ -1,6 +1,6 @@
 interface WeatherData {
-    temparature: number;
-    humudity: number;
+    temperature: number;
+    humidity: number;
     wind: number;
     rain: number;
 }
